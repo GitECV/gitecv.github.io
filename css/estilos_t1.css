@@ -23,6 +23,16 @@
     top: 0px;
   }
 
+  #contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main {
+    width: 1000px;
+  }
+
   article {
     display: flex;
     flex-direction: column;
@@ -104,7 +114,7 @@
     padding-top: 1rem;
   }
 }
-@media (min-width: 250px) and (max-width: 850px) {
+@media (max-width: 850px) {
   * {
     padding: 0;
     margin: 0;
@@ -132,13 +142,19 @@
     padding-top: 0.5rem;
   }
 
+  #contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   article {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding-left: 1rem;
+    width: 100%;
     padding-top: 1rem;
     font-family: "Montserrat", sans-serif;
+    align-items: center;
   }
 
   #botones {
