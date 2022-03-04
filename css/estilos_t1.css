@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@media (min-width: 850px) {
+@media screen and (min-width: 850px) {
   * {
     padding: 0;
     margin: 0;
@@ -11,8 +11,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 1rem;
-    height: 4rem;
+    align-items: center;
+    height: 5rem;
     width: 100%;
     background-color: #FFFD95;
     font-family: "Bebas Neue", cursive;
@@ -21,6 +21,17 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+  }
+
+  article h1 {
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  #searcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #contenedor {
@@ -59,6 +70,10 @@
     margin: 1rem;
     padding: 2rem;
     text-align: center;
+  }
+
+  .trabajo h2 {
+    color: #343434;
   }
 
   .icono {
@@ -157,6 +172,11 @@
     align-items: center;
   }
 
+  article h2 {
+    font-size: 2rem;
+    font-style: italic;
+  }
+
   #botones {
     display: flex;
     flex-direction: column;
@@ -170,6 +190,10 @@
     padding-left: auto;
     padding: 2rem;
     text-align: center;
+  }
+
+  .trabajo h2 {
+    color: #343434;
   }
 
   .icono {

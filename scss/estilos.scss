@@ -1,6 +1,6 @@
 @import 'GLOBALS';
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   * {
     margin: 0;
     padding: 0;
@@ -39,6 +39,7 @@
   .boton {
     color: $fuente-principal;
   }
+
   .boton:hover {
     color: $color-secundario-dk;
     text-shadow: 1px 1px 2px $color-primario-dk;
@@ -64,8 +65,8 @@
   }
 
   .responsive {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    width: 25rem;
   }
 
   #descripcion {
@@ -90,7 +91,7 @@
 
 }
 
-@media (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   * {
     margin: 0;
     padding: 0;
@@ -129,6 +130,7 @@
   .boton {
     color: black;
   }
+
   .boton:hover {
     color: $fuente-secundaria;
     text-shadow: 1px 1px 2px rgb(117, 117, 117);
@@ -176,8 +178,8 @@
     padding-right: 5rem;
   }
   #dibujo img {
-    width: 25rem;
-    height: 25rem;
+    max-width: 100%;
+    width: 15rem;
   }
 
   #presentacion {
@@ -185,7 +187,7 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   * {
     margin: 0;
     padding: 0;
@@ -194,10 +196,6 @@
   #presentacion h4,
   #presentacion p {
     display: none;
-  }
-
-  img {
-    width: 15rem;
   }
 
   #presentacion {
@@ -226,6 +224,11 @@
       justify-content: center;
 
       padding: 2rem, 0, 2rem, 0;
+  }
+
+  #dibujo img {
+    max-width: 100%;
+    width: 10rem;
   }
 
   #presentacion {
